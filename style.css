@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-     background-color: gray;
+     background-color: black;
 
     /* background-color: black; */
 }
@@ -131,9 +131,101 @@ form ion-icon{
     width: 100px;
     outline: 1 px solid gray;
 }
+.button__2:hover{
+    background-color: var(--primary);
+    color: white;
+}
+.button__21{
+    display: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    color: var(--primary);
+    width: 100px;
+    outline: 1 px solid gray;
+}
+.button__21:hover{
+    background-color: white;
+    color: var(--primary);
+}
 footer{
     color: var(--primary);
     position: absolute;
     bottom: 0;
     font-weight: bolder;
+}
+
+/* @media (max-width: 768.98px) {
+    .container{
+        width: 100%;
+        display: block;
+        height: 100vh;
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px !important;
+     
+
+    }
+    .section__1 {
+       height: 250px;
+       padding: 20px;;
+        
+    }
+    .section__2 {
+        height: 300;
+        padding: 36px;;
+         
+     }
+     footer{
+        position: absolute;
+       bottom: 0px;
+       
+    }
+ 
+} */
+@media (max-width: 768.98px) {
+    body{
+        height: 100%
+    }
+    .container{
+        width: 90%;
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-70%);
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+    }
+    
+    .section__1 {
+    /* display: none; */
+    padding: 20px;;
+        
+    }
+    .section__2{
+        padding: 20px;;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    
+    }
+    .botton_21{
+        display: block;
+    }
+    footer{
+        position: absolute;
+        bottom: 0px;
+        display: none;
+
+    }
+    
+  
+ 
 }
